@@ -2,7 +2,7 @@ import numpy as np
 from PIL import Image
 import os
 
-path = 'C:\\Users\\Cheung\\Google 雲端硬碟\\Doujin'
+# path = 'C:\\Users\\Cheung\\Google 雲端硬碟\\Doujin'
 format = ['.jpg','.png','.bmp']
 
 def read_image(path, format):
@@ -77,6 +77,8 @@ def del_photo(path, format, resize = (10,10)):
         print('Deleted {} images'.format(count))
 
 if __name__ == '__main__':
+    path = input("Please input a directory: ")
+    
     del_photo(path, format)
 
 
